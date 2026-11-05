@@ -45,4 +45,5 @@ ax.bar_label(barras, fmt="%.2f", padding=2)
 
 plt.tight_layout()
 #plt.savefig(PATH_GRAFICOS / "02_top10_conexiones.pdf")
+plt.savefig(PATH_GRAFICOS / "02_top10_conexiones.png", dpi=300)
 plt.show()

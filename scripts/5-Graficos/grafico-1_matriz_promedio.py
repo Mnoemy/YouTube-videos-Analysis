@@ -42,19 +42,23 @@ ax.set_title("Matriz de similitud promedio entre países")
 
 
 # Agregar valores dentro de las celdas
-for i in range(len(paises)):
-    for j in range(len(paises)):
-        ax.text(
-            j, i,
-            f"{W_promedio.iloc[i, j]:.2f}",
-            ha="center",
-            va="center",
-            color="white" if W_promedio.iloc[i, j]>W_promedio.values.max() * 0.5 else "black",
-            fontsize=8)
+#for i in range(len(paises)):
+#    for j in range(len(paises)):
+#        ax.text(
+#            j, i,
+#            f"{W_promedio.iloc[i, j]:.2f}",
+#            ha="center",
+#            va="center",
+#            color="white" if W_promedio.iloc[i, j]>W_promedio.values.max() * 0.5 else "black",
+#            fontsize=8)
 
 barra = fig.colorbar(imagen, ax=ax)
 barra.set_label("Peso promedio de co-consumo")
 
 plt.tight_layout()
 #plt.savefig(PATH_GRAFICOS / "01_matriz_promedio.pdf")
+plt.savefig(PATH_GRAFICOS / "01_matriz_promedio.png", dpi=300)
+
+#plt.savefig(bbox_inches="tight")
+
 plt.show()
