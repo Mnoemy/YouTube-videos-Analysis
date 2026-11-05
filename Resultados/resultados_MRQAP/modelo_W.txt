@@ -1,0 +1,34 @@
+MODELO 1: MATRIZ W ORIGINAL
+
+
+OLS Network Model
+
+Residuals:
+        0%        25%        50%        75%       100% 
+-16.930589  -5.805891  -2.120669   3.269415  56.558518 
+
+Coefficients:
+            Estimate  Pr(<=b) Pr(>=b) Pr(>=|b|)
+(intercept)  5.608238 0.9993  0.0594  0.0594   
+x1          -5.327880 0.0049  0.9951  0.0090   
+x2          -5.924092 0.0002  0.9998  0.0013   
+
+Residual standard error: 11.39 on 52 degrees of freedom
+Multiple R-squared: 0.311 	Adjusted R-squared: 0.2845 
+F-statistic: 11.74 on 2 and 52 degrees of freedom, p-value: 6.218e-05 
+
+
+Test Diagnostics:
+
+	Null Hypothesis: qapspp 
+	Replications: 10000 
+	Coefficient Distribution Summary:
+
+       (intercept)        x1        x2
+Min       3.651754 -4.316845 -4.172227
+1stQ      3.651754 -0.784906 -0.771227
+Median    3.651754 -0.008765 -0.050839
+Mean      3.651754  0.013749  0.003620
+3rdQ      3.651754  0.843018  0.727280
+Max       3.651754  4.377250  4.117868
+
