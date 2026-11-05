@@ -48,10 +48,11 @@ ax.set_title("Estabilidad temporal de la estructura de la red")
 ax.legend(frameon=False)
 ax.grid(axis="y", alpha=0.2)
 
-ax.spines["top"].set_visible(False)
-ax.spines["right"].set_visible(False)
+#ax.spines["top"].set_visible(False)
+#ax.spines["right"].set_visible(False)
 
 
 plt.tight_layout()
 #plt.savefig(PATH_GRAFICOS / "04_estabilidad_estructural.pdf")
+plt.savefig(PATH_GRAFICOS / "04_estabilidad_estructural.png", dpi=300)
 plt.show()

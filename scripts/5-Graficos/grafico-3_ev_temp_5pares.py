@@ -53,10 +53,11 @@ ax.grid(axis="y", alpha=0.15)
 #fig.autofmt_xdate()
 plt.tight_layout()
 #plt.savefig(PATH_GRAFICOS / "03_evolucion_top5_pares.pdf")
+plt.savefig(PATH_GRAFICOS / "03_evolucion_top5_pares.png", dpi=300)
 plt.show()
 
 
-
+'''
 fig, ax = plt.subplots(figsize=(12, 6))
 
 for par in top_5_pares:
@@ -87,3 +88,4 @@ ax.spines["right"].set_visible(False)
 #fig.autofmt_xdate()
 plt.tight_layout()
 plt.show()
+'''
