@@ -471,13 +471,13 @@ sink()
 
 # Guardar los objetos completos de ambos modelos.
 
-save(modelo, modelo_log, file = "../../Resultados/resultados_MRQAP/modelos_MRQAP.RData")
+#save(modelo, modelo_log, file = "../../Resultados/resultados_MRQAP/modelos_MRQAP.RData")
 
 
 # Guardar también cada modelo por separado.
-saveRDS(modelo, file = "../../Resultados/resultados_MRQAP/modelo_W.rds")
+#saveRDS(modelo, file = "../../Resultados/resultados_MRQAP/modelo_W.rds")
 
-saveRDS(modelo_log, file = "../../Resultados/resultados_MRQAP/modelo_W_log.rds")
+#saveRDS(modelo_log, file = "../../Resultados/resultados_MRQAP/modelo_W_log.rds")
 
 
 cat("\nResultados guardados en la carpeta resultados_MRQAP\n")
